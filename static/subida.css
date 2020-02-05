@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Andada|Permanent+Marker|Raleway:300');
+* {
+ box-sizing: border-box;
+}
+
+body {
+ background-image: url("salon.PNG");
+ position: relative;
+ font-family: 'Roboto', sans-serif;
+ 
+}
+
+#contenedor{
+  width: 500px;
+  margin: auto;
+  
+  border-radius: 5px;
+}
+
+.caja{border:3px solid #026abe;width:500px;height:170px;margin: auto;}
+.redondea { border-radius: 5px;}
+
+input[type=submit] {
+  background-color: #026abe;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size:16px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 10px;
+  width: 180px
+}
+
+
+
+input[type=file] {
+  
+  cursor: pointer;
+  color: #2c2c2c;
+  font-size:14px;
+  font-weight: bold;
+  
+}
+
+.caja2{border:2px solid #dddddd;margin: auto;}
+.redondea2 { border-radius: 5px;}
+
+
+
+
+  
+#main-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 220px;
+}
+  #main-footer p {
+    margin: 0;
+  }
+  
+  #main-footer a {
+    color: white;
+  }
+
+
+  table, td{
+    
+    border-collapse: collapse;
+  }
+
+  th{
+    text-align: center;
+  }

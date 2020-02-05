@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<title>Cenidet</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/coffeehouse.jpg");
+      min-height: 75%;
+    }
+    
+    .menu {
+      display: none;
+    }
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+
+<script type="text/javascript"
+    src="https://www.languagetool.org/js/jquery-1.7.0.min.js"></script>
+<script type="text/javascript"
+    src="https://www.languagetool.org/online-check/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript"
+    src="https://www.languagetool.org/online-check/tiny_mce/plugins/atd-tinymce/editor_plugin2.js"></script>
+
+<script language="javascript" type="text/javascript">  
+  tinyMCE.init({
+     mode : "textareas",
+     plugins : "AtD,paste",
+     paste_text_sticky : true,
+     setup : function(ed) {
+         ed.onInit.add(function(ed) {
+             ed.pasteAsPlainText = true;
+         });
+     },  
+     /* translations: */
+     languagetool_i18n_no_errors : {
+         // "No errors were found.":
+         "de-DE": "Keine Fehler gefunden."
+     },
+     languagetool_i18n_explain : {
+         // "Explain..." - shown if there is an URL with a detailed description:
+         "de-DE": "Mehr Informationen..."
+     },
+     languagetool_i18n_ignore_once : {
+         // "Ignore this error":
+         "de-DE": "Hier ignorieren"
+     },
+     languagetool_i18n_ignore_all : {
+         // "Ignore this kind of error":
+         "de-DE": "Fehler dieses Typs ignorieren"
+     },
+     languagetool_i18n_rule_implementation : {
+         // "Rule implementation":
+         "de-DE": "Implementierung der Regel"
+     },
+ 
+     languagetool_i18n_current_lang :
+         function() { return document.checkform.lang.value; },
+     /* The URL of your LanguageTool server.
+        If you use your own server here and it's not running on the same domain 
+        as the text form, make sure the server gets started with '--allow-origin ...' 
+        and use 'https://your-server/v2/check' as URL: */
+     languagetool_rpc_url                 : "https://languagetool.org/api/v2/check",
+     /* edit this file to customize how LanguageTool shows errors: */
+     languagetool_css_url :
+         "https://www.languagetool.org/online-check/" +
+         "tiny_mce/plugins/atd-tinymce/css/content.css",
+     /* this stuff is a matter of preference: */
+     theme                              : "advanced",
+     theme_advanced_buttons1            : "",
+     theme_advanced_buttons2            : "",
+     theme_advanced_buttons3            : "",
+     theme_advanced_toolbar_location    : "none",
+     theme_advanced_toolbar_align       : "left",
+     theme_advanced_statusbar_location  : "bottom",
+     theme_advanced_path                : false,
+     theme_advanced_resizing            : true,
+     theme_advanced_resizing_use_cookie : false,
+     gecko_spellcheck                   : false
+  });
+ 
+  function doit() {
+     var langCode = document.checkform.lang.value;
+     tinyMCE.activeEditor.execCommand("mceWritingImprovementTool", langCode);
+  }
+</script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Cenidet</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/" class="w3-bar-item w3-button">Cargar archivo</a>
+      <a href="#feedback" class="w3-bar-item w3-button">Feedback</a>
+      <a href="#about" class="w3-bar-item w3-button">Acerca de...</a>
+      <a href="#chatbot" class="w3-bar-item w3-button"> CHATBOT</a>
+      <!--<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
+      
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contacto</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ×</a>
+  <a href="#feedback" onclick="w3_close()" class="w3-bar-item w3-button">Feedback</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Acerca de...</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">CHATBOT</a>
+  <!--<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
+  
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
+</nav>
+
+<!-- Header with full-height image -->
+<div class="w3-container" style="padding:20px 16px" id="feedback">
+  <br></br>
+
+
+
+<h1 align="center"> Retroalimentación</h1>
+<h4>Hola {{ user }} hemos detectado un total de <b>{{ total }}</b> errores de ortografía, en palabras <b><abbr title="Palabras que se acentúan en la última sílaba">{{erroragu}}</abbr> <abbr title="Palabras que se acentuan en penúltima sílaba">{{errorgra}}</abbr> <abbr title="Palabras que se acentúan en la antepenúltima sílaba ">{{erroresd}}</abbr> <abbr title="Palabras que se acentúan despues de la antepenúltima sílaba">{{errorsob}}</abbr></b></h4>
+<p align="center" class="bg-success text-white">Deberías practicar con el <a class="boton" href="#chatbot">chatbot</a> para evitar cometer errores.</p>
+
+<!--<h4>Texto original</h4>
+<div id="contenedor"> {{ txtorigen }}</div>
+-->
+
+<h4>
+<a title="Si apracen más de una palabra en la fila es por que probablemente se detectaron palabras en las cuales existe omisión de caracteres">Palabras con errores detectados:</a>
+</h4>
+
+
+  <div id="contenedor">
+<center>
+    <form name="checkform" action="http://community.languagetool.org" method="post">
+
+  <p id="checktextpara">
+    
+      <textarea id="checktext" name="text" style="width: 100%"
+        rows="6">{{ txtorigen }}</textarea>
+  </p>
+
+ <div id="feedback">Da click al texto y despues preciona el botón de "Mostrar errores"</div>
+  <div>
+      <select name="lang" id="lang">
+        <option value="ES">Español</option>
+      </select>
+      <input type="submit" name="_action_checkText"
+          value="Mostrar errores" onClick="doit();return false;"><a href="https://languagetool.org"></a>
+      <div id="feedbackErrorMessage" style="color: red;"></div><br>
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:40px 16px" id="about">
+
+
+<!-- About Section -->
+
+  <h3 class="w3-center">Acerca del sistema</h3>
+  <p class="w3-center w3-large">Chatbot dedicado a la mejora de la ortografía</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Chatbot</p>
+      <p>Un chatbot es un software que tiene la habilidad de mantener una conversación con un
+        usuario a través del uso del lenguaje natural</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Ortografía</p>
+      <p>La ortografía es la parte de la gramática normativa encargada de establecer las reglas que regulan el correcto uso de las palabras y de los signos de puntuación en la escritura.</p>
+    </div>
+    <div class="w3-quarter">
+
+      <h1>PLN</h1>
+      <p class="w3-large">Procesamiento de lenguaje natural</p>
+      <p>El procesamiento del lenguaje natural (PLN) es el campo de la computación en el cual se utiliza lingüística aplicada, con
+        el objetivo de comprender y procesar información del lenguaje humano para determinadas tareas.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Soporte</p>
+      <p>La conversación se actualiza constantemente para brindar un mejor servicio. Entre más converses con el chatbot mejor será la conversación con el tiempo</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:50px 16px" id="chatbot">
+    <!-- <h3 class="w3-center">CONTACT</h3> -->
+    <!-- <p class="w3-center w3-large">Chatbot dedicado a la ayuda de la comprensión de la ortografía</p>-->
+     
+ <div>
+ <!-- Menu Container -->
+ <div class="w3-container" id="menu">
+     <div class="w3-content" style="max-width:800px">
+    
+       
+     
+       <div class="w3-row w3-center w3-card w3-padding">
+         <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+           <div class="w3-col s6 tablink">Chatbot</div>
+         </a>
+         <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+           <div class="w3-col s6 tablink">Instrucciones</div>
+         </a>
+       </div>
+   
+       <div id="Eat" class="w3-container menu w3-padding-8 w3-card">
+           <iframe width="100%" height="500" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/96ab60d1-1295-40c5-9c9c-263dbb780a63"></iframe>
+       </div>
+   <!-- <div id="Eat" class="w3-container menu w3-padding-48 w3-card"> -->
+       <div id="Drinks" class="w3-container menu w3-padding-8 w3-card">
+         <center><h5>Información de cómo usar el chatbot</h5></center>
+         
+         <p align="justify" class="w3-text-grey" aling="justify">Para comenzar la interacción con el chatbot es necesario escribir un mensaje en el 
+            recuadro que dice "Diga algo...".</p>
+       
+         <h4></h4>
+         <p align="justify" class="w3-text-grey">El chatbot es capaz de responder algunas dudas, dar información, ejemplos y ejercicios de ortografía, en este caso de los temas de 
+            acentuación (palabras agudas, graves, esdrújulas y sobreesdrújulas), además del correcto uso de las letras
+            "b/v/".</p>
+       
+         <h5>El chatbot también funciona cómo un "consultor" ya que se le puede preguntar cómo se escribe una palabra.</h5>
+         <p class="w3-text-grey">Ejemplo:</p>
+
+         <h5>¿Cómo se escribe la palabra "cancion"?.</h5>
+       
+        
+         <p align="justify" class="w3-text-grey">El agente conversacional dará una repuesta acorde a la palabra que se le pregunta, 
+            es importante conocer que de momento el chatbot está acotado a un dominio especifico en este caso 
+          informática, por ese motivo no se cuenta con todas las palabras existentes que posean acentos.</p>
+       
+          <p align="justify" class="w3-text-grey">Si alguna palabra que consultes no está disponible, puedes escribir directamente en el chatbot
+             la palabra que no fue capaz de responder, para que podamos estar actualizando la base de datos en el menor tiempo posible y así brindar un mejor servicio.</p>
+         
+         
+       </div>  
+      
+     </div>
+   </div>
+ </div>
+ 
+ 
+     </div>
+   </div>
+ 
+
+
+
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:80px 16px" id="pricing">
+
+
+
+   <h3 class="w3-center">EQUIPO</h3>
+   <p class="w3-center w3-large"></p>
+
+   
+   <div><center>
+   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+     <div class="w3-col l3 m6 w3-margin-bottom">
+       <div class="w3-card">
+         <img src="/w3images/team2.jpg" alt="Julio" style="width:100%">
+         <div class="w3-container">
+           <h3>Julio Castañeda</h3>
+           <p class="w3-opacity">Desarrollador</p>
+           <p><p>
+           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+         </div>
+       </div>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom">
+       <div class="w3-card">
+         <img src="/w3images/team1.jpg" alt="Noé" style="width:100%">
+         <div class="w3-container">
+           <h3>Dr. Noé Castro</h3>
+           <p class="w3-opacity">Director</p>
+           <p></p>
+           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+         </div>
+       </div>
+     </div>
+
+
+
+
+     
+     
+    </div>
+  </div>
+</center>
+
+</div>
+
+<!-- Promo Section - "We know design" -->
+<!--<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+--> 
+
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Gráficas</h3>
+      
+      <p></p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"></i>Errores en acentos</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:{{ total }}%">{{ total }}</div>
+      </div>
+      <p class="w3-wide"></i>Otros datos</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"></i>datos</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+
+<!-- Promo Section "Statistics" 
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+
+-->
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:60px 16px" id="contact">
+  <h3 class="w3-center">CONTACTO Y SUGERENCIAS</h3>
+  <p class="w3-center w3-large"></p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+   
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#feedback" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
+  <div class="w3-xlarge w3-section">
+  <a href="https://www.facebook.com/SomosTecNM" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <a href="https://twitter.com/TecNM_MX" target="_blank">  <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>CENTRO DE NACIONAL DE INVESTIGACIÓN Y DESARROLLO TECNOLOGICO <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Cenidet</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+    </script>
+
+</body>
+</html>
